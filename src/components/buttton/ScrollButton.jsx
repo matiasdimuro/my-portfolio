@@ -7,13 +7,13 @@ function ScrollButton() {
     const [isClicked, setClicked] = useState(false)
 
     const variants = {
-        initial: { scale: 1 },
+        initial: { scale: 1, x: "-50%" },
         whileTap: { scale: .9 }
     }
 
     const variantsItem = {
-        initial: { y: "5px", x: "50%" },
-        end: { y: "120%", x: "50%" }
+        initial: { y: 5, x: "50%" },
+        end: { y: "80%" }
     }
 
     return (
