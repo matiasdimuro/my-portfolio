@@ -1,6 +1,7 @@
 import Button from '../buttton/Button.jsx'
+import ScrollButton from '../buttton/ScrollButton.jsx'
 import Circle from '../circle/Circle.jsx'
-import Me from '../../assets/me.png'
+// import Me from '../../assets/me.png'
 import './Hero.scss'
 
 function Hero() {
@@ -15,6 +16,7 @@ function Hero() {
                 {/* <img src={Me} alt="Portrait" /> */}
                 <Circle/>
             </div>
+            <ScrollButton />
         </div>
     )
 }

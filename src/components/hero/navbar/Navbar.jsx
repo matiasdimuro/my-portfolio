@@ -29,13 +29,12 @@ function Navbar() {
 
     const [isMenuCollapsed, setMenuCollapsed] = useState(false)
 
-    const variantsNavbar = {
+    const variantsNavmenu = {
         visible: {
             clipPath: "circle(1200px at 0px 0px)",
             transition: {
                 type: "spring",
-                stifness: 400,
-                damping: 40
+                damping: 30
             }
         },
         hidden: {
@@ -43,10 +42,19 @@ function Navbar() {
         }
     }
 
+    const variantsNavbar = {
+        initial: {
+            backgroundColor: "transparent"
+        },
+        scroll: {
+            backgroundColor: "red"
+        }
+    }
+
     return (
         <>
             {/* Expanded */}
-            <nav className="NavbarExpanded">
+            <nav className="NavbarExpanded" >
                 <MenuButton 
                     handleClick={setMenuCollapsed} 
                     className={`${!isMenuCollapsed ? 'hidden' : 'visible'}`} />
@@ -63,8 +71,7 @@ function Navbar() {
                 </ul>
             </nav>
             {/* Collapsed */}
-            {/* <nav className={`NavbarCollapsed ${!isMenuCollapsed ? 'hidden' : 'visible'}`}> */}
-            <motion.nav className='NavbarCollapsed' animate={!isMenuCollapsed ? "hidden" : "visible"} variants={variantsNavbar}>
+            <motion.nav className='NavbarCollapsed' animate={!isMenuCollapsed ? "hidden" : "visible"} variants={variantsNavmenu}>
                 <CloseButton handleClick={setMenuCollapsed} />
                 <ul>
                     {

@@ -10,7 +10,8 @@ function App() {
         <Navbar/>
         <Hero/>
       </main>      
-      <section id='AcercaDeMi'>About</section>      
+      <section id='AcercaDeMi' className='bgGradientPrimary-LtRb-Inverted'>
+      </section>      
       <section id='Proyectos'>Projects</section>      
       <section id='Experiencia'>Experience</section>      
       <section id='Contacto'>Contact</section>      
