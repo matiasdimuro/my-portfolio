@@ -1,0 +1,120 @@
+@import "../../../index.scss";
+
+nav:is(.NavbarCollapsed) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    display: none;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-light;
+    z-index: 999;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style-type: none;
+        li {
+            text-align: center;
+            a {
+                display: inline-block;
+                font-size: $font-size-subtitle-lg;
+                font-weight: 600;
+                background: linear-gradient(
+                    297deg, 
+                    #2F2845 0%, 
+                    #3E80C2 0.01%, 
+                    #272F3F 0.02%, 
+                    #211A1E 100%
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all .17s;
+            }
+            a:hover {
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                transition: all .17s;
+            }
+        }
+    }
+    .CloseButton {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+nav:is(.NavbarExpanded) {
+    position: fixed;
+    height: fit-content;
+    width: calc(100% - $padding-xl * 2);
+    max-width: $max-width;
+    z-index: 100;
+    // border: 1px solid black;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        list-style-type: none;
+        li {
+            text-align: center;
+            a {
+                display: inline-block;
+                padding: 5px 20px;
+                font-size: $font-size-subtitle-sm;
+                color: $color-grey;
+                transition: color .2s ease-out;
+            }
+            a:hover {
+                color: $color-primary-main;
+            }
+            a:active {
+                color: $color-primary-dark;
+            }
+            a:focus, a:focus-visible {
+                color: $color-primary-main;
+                outline: none;
+            }
+        }
+    }
+}
+
+.MenuButton {
+    position: fixed;
+    display: none;
+    cursor: pointer;
+}
+.CloseButton {
+    cursor: pointer;
+}
+
+@media (min-width: 920px) and (max-width: 1130px) {
+    nav:is(.NavbarExpanded) {
+        width: calc(100% - $padding-lg * 2);
+    }
+}
+
+@media (min-width: 620px) and (max-width: 920px) {
+    nav:is(.NavbarExpanded) {
+        width: calc(100% - $padding-md * 2);
+    }
+}
+
+@media (min-width: 0) and (max-width: 620px) {
+    nav:is(.NavbarExpanded) {
+        width: 100%;
+        padding: 0 10px;
+        .MenuButton {
+            display: inline-block;
+        }
+    }
+    nav:is(.NavbarExpanded) ul {
+        display: none;
+    }
+    nav:is(.NavbarCollapsed) {
+        display: flex;
+    }
+}

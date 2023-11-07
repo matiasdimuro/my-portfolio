@@ -1,0 +1,25 @@
+@import "../index.scss";
+
+main, section {
+    min-height: 100dvh;
+    padding: 10px $padding-xl;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+
+main {
+    overflow: hidden;
+}
+
+@media (min-width: 920px) and (max-width: 1130px) {
+    main, section {
+        padding: 10px $padding-lg;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 920px) {
+    main, section {
+        padding: 10px $padding-md;
+    }
+}

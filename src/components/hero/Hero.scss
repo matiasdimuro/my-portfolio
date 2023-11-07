@@ -1,0 +1,101 @@
+@import '../../index.scss';
+
+.HeroContainer {
+    position: relative;
+    width: 100%;
+    max-width: $max-width;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .headings {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h2 {
+            color: $color-primary-dark;
+            font-size: $font-size-subheading-md;
+            line-height: $font-size-subheading-md - 10px;
+        }
+        h1 {
+            color: $color-light;
+            font-size: $font-size-heading-md;
+            line-height: $font-size-heading-md - 10px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+}
+
+@media (min-width: 920px) and (max-width: 1130px) {
+    .HeroContainer {
+        .headings {
+            h2 {
+                font-size: $font-size-subheading-sm;
+                line-height: $font-size-subheading-sm - 10px;
+            }
+            h1 {
+                font-size: $font-size-heading-sm;
+                line-height: $font-size-heading-sm - 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .HeroContainer {
+        .headings {
+            flex-grow: 1;
+            order: 2;
+            align-items: center;
+            text-align: center;
+        }
+        .portrait {
+            flex-grow: 1;
+            order: 1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 440px) and (max-width: 920px) {
+    .HeroContainer {
+        .headings {
+            h2 {
+                font-size: $font-size-subheading-sm;
+                line-height: $font-size-subheading-sm - 10px;
+            }
+            h1 {
+                font-size: $font-size-heading-sm;
+                line-height: $font-size-heading-sm - 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .HeroContainer {
+        padding: 0;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 440px) {
+    .HeroContainer {
+        .headings {
+            h2 {
+                font-size: $font-size-subheading-xs;
+                line-height: $font-size-subheading-xs - 10px;
+            }
+            h1 {
+                font-size: $font-size-heading-xs;
+                line-height: $font-size-heading-xs - 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import '../../index.scss';
+
+.Button-container {
+    position: relative;
+    width: fit-content;
+    height: 45px;
+
+    .Button-borderBottom, .Button-borderTop, .Button-borderRight, .Button-borderLeft {
+        position: absolute;
+        background-color: $color-primary-dark;
+        transition: transform .3s ease-out;
+
+    }
+    .Button-borderBottom, .Button-borderTop {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    .Button-borderRight {
+        transform: scaleY(0);
+    }
+    .Button-borderLeft {
+        top: 0;
+        height: 100%;
+        width: 2px;
+    }
+    .Button-borderTop {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+    }
+    .Button-borderBottom {
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+    }
+    .Button-borderRight {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 2px;
+    }
+}
+
+.Button-container:hover {
+    .Button-borderTop, .Button-borderBottom {
+        transform: scaleX(1);
+    }
+    .Button-borderRight {
+        transform: scaleY(1);
+    }
+}
+
+.Button-container:active {
+    .Button-borderTop, .Button-borderBottom {
+        height: 3px;
+    }
+    .Button-borderLeft, .Button-borderRight {
+        width: 3px;
+    }
+    button {
+        font-weight: 600;
+    }
+}
+
+
+button {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    border: none;
+    color: $color-primary-dark;
+    font-size: $font-size-subtitle-sm;
+    cursor: pointer;
+}
+button:focus-visible {
+    outline: none;
+    font-weight: 600;
+    border: 2px solid $color-primary-dark;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+// Breakpoint Rules
+// xl: 1130px
+// lg: 920px
+// md: 620px
+// sm: 440px
+
+$font-size-heading-lg: 80px;
+$font-size-heading-md: 68px;
+$font-size-heading-sm: 58px;
+$font-size-heading-xs: 33px;
+
+$font-size-subheading-lg: 36px;
+$font-size-subheading-md: 32px;
+$font-size-subheading-sm: 24px;
+$font-size-subheading-xs: 18px;
+
+$font-size-subtitle-lg: 24px;
+$font-size-subtitle-md: 20px;
+$font-size-subtitle-sm: 16px;
+
+$font-size-text-lg: 16px;
+$font-size-text-md: 14px;
+$font-size-text-sm: 10px;
+
+$max-width: 1800px;
+
+$padding-xl: 100px; 
+$padding-lg: 70px; 
+$padding-md: 40px; 
+
+$color-dark: #211A1E;
+$color-light: #D9D9D9;
+$color-grey: #8A8A8A;
+$color-primary-main: #3E80C2;
+$color-primary-light: #6FA0D2;
+$color-primary-dark: #376799;
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+.bgGradientPrimary-LtRb {
+  background: linear-gradient(
+    297deg, 
+    #2F2845 0%, 
+    #3E80C2 0.01%, 
+    #272F3F 0.02%, 
+    #211A1E 100%
+    );
+}
+
+.bgGradientPrimary-LtRb-Inverted {
+  background: linear-gradient(
+    63deg, 
+    #283245 0%, 
+    #3E80C2 0.01%, 
+    #272F3F 0.02%, 
+    #211A1E 100%
+  );
+}
+
+.bgGradientPrimary-TB {
+  background: linear-gradient(
+    180deg, 
+    rgba(40, 50, 69, 0.60) 0%, 
+    rgba(62, 128, 194, 0.60) 0.01%, 
+    rgba(39, 47, 63, 0.60) 0.02%, 
+    rgba(33, 26, 30, 0.60) 100%
+  );
+}
+
+.bgGradientSecondary-LtRb {
+  background: linear-gradient(
+    180deg, 
+    $color-primary-light 0%, 
+    $color-primary-dark 100%
+  );
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}

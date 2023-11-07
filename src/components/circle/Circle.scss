@@ -1,0 +1,23 @@
+@import url("../../index.scss");
+
+.Circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 541px;
+}
+
+@media (min-width: 920px) and (max-width: 1130px) {
+    .Circle {
+        width: 275px;
+        height: 275px;
+        border-radius: 541px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 920px) {
+    .Circle {
+        width: 240px;
+        height: 240px;
+        border-radius: 541px;
+    }
+}
