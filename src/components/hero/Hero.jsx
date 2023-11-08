@@ -12,7 +12,7 @@ function Hero() {
             <motion.div 
                 className='headings' 
                 initial={{x: -300, opacity: 0}} 
-                whileInView={{ x: 0, opacity: 1, transition: { duration: 1.2, type: "spring"} }}
+                whileInView={{ x: 0, opacity: 1, transition: { duration: 1.2, type: "spring", delay: .15} }}
             >
                 <Subheading value="Desarrollador Web Frontend" />
                 <Heading value="Matias Di muro" />
@@ -22,7 +22,7 @@ function Hero() {
             <motion.div 
                 className='portrait'
                 initial={{x: 300, opacity: 0}} 
-                whileInView={{ x: 0, opacity: 1, transition: { duration: 1.2, type: "spring"} }} 
+                whileInView={{ x: 0, opacity: 1, transition: { duration: 1.2, type: "spring", delay: .15} }} 
             >
                 <Circle/>
             </motion.div>

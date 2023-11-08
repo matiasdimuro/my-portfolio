@@ -1,0 +1,34 @@
+@import "../../index.scss";
+
+.ProjectsBackground {
+    position: relative;
+    width: 100%;
+    // padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        position: relative;
+        top: -50px;
+        h1 {  
+            text-align: center;
+            z-index: 999;
+        }
+    }
+
+    img {
+        position: absolute;
+        left: -$padding-xl;
+        bottom: -20px;
+        width: calc(100% + $padding-xl * 2);
+        height: 100%;
+        object-fit: cover;
+    }
+    #mountains {
+        z-index: 20;
+    }
+    #stars {
+        z-index: 10;
+    }
+} 

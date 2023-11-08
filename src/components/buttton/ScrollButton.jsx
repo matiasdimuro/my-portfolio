@@ -8,7 +8,6 @@ function ScrollButton() {
         initial: { scale: 1, x: "-50%", opacity: 0, y: 100 },
         whileTap: { scale: .9 },
         visible: { scale: 1, x: "-50%", opacity: 1, y: 0, transition: { type: "spring" } },
-
     }
 
     const variantsItem = {

@@ -32,24 +32,23 @@ const items = [
 
 function About() {
     return (
-        <div className="AboutContainer" transition={{ duration: 1, type: "spring" }}>
+        <div className="AboutContainer" >
             <motion.div 
                 initial={{ y: 150, opacity: 0 }} 
-                whileInView={{ y: 0, opacity: 1, transition: { duration: 1, type: "spring" }}}
+                whileInView={{ y: 0, opacity: 1, transition: { duration: 1, type: "spring", delay: .15 }}}
             >
                 <Heading value="Acerca de mi" />
             </motion.div>
-            {/* initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 3}}} */}
             <div className="content" >
                 <motion.img 
                     src={Image} alt="About me image" 
                     initial={{x: -150, opacity: 0}} 
-                    whileInView={{x: 0, opacity: 1, transition: { duration: 1, type: "spring"}}}
+                    whileInView={{x: 0, opacity: 1, transition: { duration: 1, type: "spring", delay: .15}}}
                 />
                 <motion.div 
                     className="itemGrid"
                     initial={{x: 150, opacity: 0}}
-                    whileInView={{x: 0, opacity: 1, transition: { duration: 1, type: "spring" } }}    
+                    whileInView={{x: 0, opacity: 1, transition: { duration: 1, type: "spring", delay: .15 } }}    
                 >
                     {
                         items.map(item => <Item key={item.title} title={item.title} text={item.text} />)
@@ -57,7 +56,7 @@ function About() {
                 </motion.div>
             </div>
 
-            <BackScrollButton></BackScrollButton>
+            <BackScrollButton />
         </div>
     )
 }

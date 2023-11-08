@@ -1,8 +1,9 @@
 import Navbar from './hero/navbar/Navbar'
 import Hero from './hero/Hero'
+import About from './about/About'
+import ProjectsBackground from './projects/ProjectsBackground'
 import './App.scss'
 import '../index.scss'
-import About from './about/About'
 
 function App() {
 
@@ -15,7 +16,9 @@ function App() {
       <section id='AcercaDeMi' className='bgGradientPrimary-LtRb-Inverted'>
         <About />
       </section>      
-      <section id='Proyectos'>Projects</section>      
+      <section id='Proyectos' className='bgGradientPrimary-TB'>
+        <ProjectsBackground />  
+      </section>      
       <section id='Experiencia'>Experience</section>      
       <section id='Contacto'>Contact</section>      
     </>

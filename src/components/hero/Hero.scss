@@ -24,7 +24,7 @@
 
 @media (max-width: 820px) {
     .HeroContainer {
-    align-items: start;
+        align-items: start;
         .headings {
             flex-grow: 1;
             order: 2;
@@ -44,7 +44,7 @@
 
 @media (max-width: 620px) {
     .HeroContainer {
-        padding: 0;
+        padding: 100px 0;
         gap: 0px;
     }
 }
