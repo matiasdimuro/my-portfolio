@@ -48,7 +48,7 @@ nav:is(.NavbarCollapsed) {
 }
 
 nav:is(.NavbarExpanded) {
-    position: fixed;
+    position: absolute;
     height: fit-content;
     width: calc(100% - $padding-xl * 2);
     max-width: $max-width;

@@ -22,7 +22,7 @@ $font-size-subtitle-sm: 16px;
 
 $font-size-text-lg: 16px;
 $font-size-text-md: 14px;
-$font-size-text-sm: 10px;
+$font-size-text-sm: 12px;
 
 $max-width: 1800px;
 
@@ -58,7 +58,7 @@ body {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif !important;
 }
 
 .bgGradientPrimary-LtRb {

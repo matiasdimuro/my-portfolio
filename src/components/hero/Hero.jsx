@@ -1,22 +1,34 @@
 import Button from '../buttton/Button.jsx'
 import ScrollButton from '../buttton/ScrollButton.jsx'
 import Circle from '../circle/Circle.jsx'
-// import Me from '../../assets/me.png'
+import { Heading, Subheading } from '../text/Text.jsx'
+import { motion } from 'framer-motion'
 import './Hero.scss'
 
 function Hero() {
     return (
         <div className='HeroContainer'>
-            <div className='headings'>
-                <h2>Desarrollador Web Frontend</h2>
-                <h1>Matias Di muro</h1>
+
+            <motion.div 
+                className='headings' 
+                initial={{x: -300, opacity: 0}} 
+                whileInView={{ x: 0, opacity: 1, transition: { duration: 1.2, type: "spring"} }}
+            >
+                <Subheading value="Desarrollador Web Frontend" />
+                <Heading value="Matias Di muro" />
                 <Button text="Contactarme"/>
-            </div>
-            <div className='portrait'>
-                {/* <img src={Me} alt="Portrait" /> */}
+            </motion.div>
+
+            <motion.div 
+                className='portrait'
+                initial={{x: 300, opacity: 0}} 
+                whileInView={{ x: 0, opacity: 1, transition: { duration: 1.2, type: "spring"} }} 
+            >
                 <Circle/>
-            </div>
+            </motion.div>
+
             <ScrollButton />
+
         </div>
     )
 }

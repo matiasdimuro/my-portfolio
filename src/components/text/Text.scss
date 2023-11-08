@@ -1,0 +1,67 @@
+@import '../../index.scss';
+
+h1 {
+    color: $color-light;
+    font-size: $font-size-heading-md;
+    line-height: $font-size-heading-md - 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h2 {
+    color: $color-primary-dark;
+    font-size: $font-size-subheading-md;
+    line-height: $font-size-subheading-md - 10px;
+}
+
+p {
+    color: $color-light;
+    font-size: $font-size-text-lg;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 820px) and (max-width: 1130px) {
+    h2 {
+        font-size: $font-size-subheading-sm;
+        line-height: $font-size-subheading-sm - 10px;
+    }
+    h1 {
+        font-size: $font-size-heading-sm;
+        line-height: $font-size-heading-sm - 10px;
+    }
+    p {
+        color: $color-light;
+        font-size: $font-size-text-md;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 920px) {
+    h2 {
+        font-size: $font-size-subheading-sm;
+        line-height: $font-size-subheading-sm - 10px;
+    }
+    h1 {
+        font-size: $font-size-heading-sm;
+        line-height: $font-size-heading-sm - 10px;
+    }
+    p {
+        color: $color-light;
+        font-size: $font-size-text-sm;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 440px) {
+    h2 {
+        font-size: $font-size-subheading-xs;
+        line-height: $font-size-subheading-xs - 10px;
+    }
+    h1 {
+        font-size: $font-size-heading-xs;
+        line-height: $font-size-heading-xs - 10px;
+    }
+    p {
+        color: $color-light;
+        font-size: $font-size-text-sm;
+        letter-spacing: 1px;
+    }
+}

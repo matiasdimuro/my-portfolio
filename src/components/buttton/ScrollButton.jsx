@@ -4,11 +4,11 @@ import './ScrollButton.scss'
 
 function ScrollButton() {
 
-    const [isClicked, setClicked] = useState(false)
-
     const variants = {
-        initial: { scale: 1, x: "-50%" },
-        whileTap: { scale: .9 }
+        initial: { scale: 1, x: "-50%", opacity: 0, y: 100 },
+        whileTap: { scale: .9 },
+        visible: { scale: 1, x: "-50%", opacity: 1, y: 0, transition: { type: "spring" } },
+
     }
 
     const variantsItem = {
@@ -20,7 +20,7 @@ function ScrollButton() {
         <motion.div 
             className="ScrollButton" 
             onClick={() => setClicked(prev => !prev)} 
-            initial={variants.initial} whileTap={variants.whileTap}
+            initial={variants.initial} whileTap={variants.whileTap} whileInView={variants.visible}
         >
             <a href="#AcercaDeMi">
                 <motion.div initial={variantsItem.initial} animate={variantsItem.end} transition={{delay: .5}} />
