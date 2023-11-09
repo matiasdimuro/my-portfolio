@@ -1,6 +1,6 @@
 @import "../../index.scss";
 
-.ProjectsBackground {
+.ParallaxBackground {
     position: relative;
     width: 100%;
     // padding: 60px 0;
@@ -25,10 +25,10 @@
         height: 100%;
         object-fit: cover;
     }
-    #mountains {
+    .mountains {
         z-index: 20;
     }
-    #stars {
+    .stars {
         z-index: 10;
     }
 } 
