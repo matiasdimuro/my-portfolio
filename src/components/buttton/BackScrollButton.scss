@@ -10,7 +10,7 @@
     background-color: $color-light;
 
     * {
-        cursor: pointer;
+        cursor: pointer !important;
     }
 
     a {

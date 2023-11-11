@@ -5,6 +5,8 @@ import ParallaxBackground from './parallax/ParallaxBackground'
 import './App.scss'
 import '../index.scss'
 import ProjectsSlider from './projects/ProjectsSlider'
+import Test from './atropos/AtroposElement'
+import Experience from './experiencia/Experience'
 
 function App() {
 
@@ -23,9 +25,12 @@ function App() {
       <article id='Proyectos'>
         <ProjectsSlider />
       </article>
-      {/* <section id='Proyectos' className='bgGradientPrimary-TB'> */}
-      {/* </section>       */}
-      <section id='Experiencia'>Experience</section>      
+      <section className='bgGradientPrimary-TB'>
+        <ParallaxBackground headingValue="Experiencia" />  
+      </section>  
+      <section id='Experiencia' className='bgGradientPrimary-LtRb'>
+        <Experience />
+      </section>      
       <section id='Contacto'>Contact</section>      
     </>
   )

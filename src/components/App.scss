@@ -15,8 +15,8 @@ main, section {
     }
 }
 
-@media (min-width: 0px) and (max-width: 920px) {
+@media (max-width: 620px) {
     main, section {
-        padding: 10px $padding-md;
+        padding: 10px $padding-sm;
     }
 }

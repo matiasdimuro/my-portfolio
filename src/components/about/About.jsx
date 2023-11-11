@@ -1,9 +1,10 @@
 import { Heading, Subheading, Text } from "../text/Text"
 import { motion } from "framer-motion"
-import "./About.scss"
-
 import Image from "../../assets/about-image.svg"
 import BackScrollButton from "../buttton/BackScrollButton"
+import Atropos from "../atropos/AtroposElement"
+
+import "./About.scss"
 
 const items = [
     {
@@ -40,10 +41,14 @@ function About() {
                 <Heading value="Acerca de mi" />
             </motion.div>
             <div className="content" >
-                <motion.img 
-                    src={Image} alt="About me image" 
-                    initial={{x: -150, opacity: 0}} 
-                    whileInView={{x: 0, opacity: 1, transition: { duration: 1, type: "spring", delay: .15}}}
+                <Atropos
+                    Element={
+                        <motion.img 
+                            src={Image} alt="About me image" 
+                            initial={{x: -150, opacity: 0}} 
+                            whileInView={{x: 0, opacity: 1, transition: { duration: 1, type: "spring", delay: .15}}}
+                        />
+                    }
                 />
                 <motion.div 
                     className="itemGrid"
@@ -55,7 +60,6 @@ function About() {
                     }
                 </motion.div>
             </div>
-
             <BackScrollButton />
         </div>
     )
