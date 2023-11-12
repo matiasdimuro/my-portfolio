@@ -1,8 +1,8 @@
 import './Button.scss'
 
-function Button({ text = "Click aquí" }) {
+function Button({ text = "Click aquí", onClick }) {
     return (
-        <div className='Button-container'>
+        <div onClick={onClick} className='Button-container'>
             <button>{text}</button>
             <div className='Button-borderTop'></div>
             <div className='Button-borderBottom'></div>

@@ -2,11 +2,11 @@ import Navbar from './hero/navbar/Navbar'
 import Hero from './hero/Hero'
 import About from './about/About'
 import ParallaxBackground from './parallax/ParallaxBackground'
+import ProjectsSlider from './projects/ProjectsSlider'
+import Experience from './experiencia/Experience'
+import Contact from './contact/Contact'
 import './App.scss'
 import '../index.scss'
-import ProjectsSlider from './projects/ProjectsSlider'
-import Test from './atropos/AtroposElement'
-import Experience from './experiencia/Experience'
 
 function App() {
 
@@ -31,7 +31,9 @@ function App() {
       <section id='Experiencia' className='bgGradientPrimary-LtRb'>
         <Experience />
       </section>      
-      <section id='Contacto'>Contact</section>      
+      <section id='Contacto' className='bgGradientPrimary-LtRb-Inverted'>
+        <Contact />  
+      </section>      
     </>
   )
 }

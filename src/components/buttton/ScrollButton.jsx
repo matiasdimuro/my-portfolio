@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
 import './ScrollButton.scss'
 
 function ScrollButton() {
@@ -18,7 +17,6 @@ function ScrollButton() {
     return (
         <motion.div 
             className="ScrollButton" 
-            onClick={() => setClicked(prev => !prev)} 
             initial={variants.initial} whileTap={variants.whileTap} whileInView={variants.visible}
         >
             <a href="#AcercaDeMi">

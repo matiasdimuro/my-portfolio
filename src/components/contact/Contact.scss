@@ -1,0 +1,122 @@
+@import "../../index.scss";
+
+.ContactContainer {
+    max-width: $max-width;
+    padding: 20px 0;
+    h1 { 
+        text-align: center; 
+        margin-bottom: 50px;
+    }
+
+    > div {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+
+        // border: 1px solid red;
+
+        .email {
+
+            h2 {
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            form {
+                margin: 30px 0 0 0;
+    
+                input, textarea {
+                    width: 100% !important;
+                    
+                    outline: none;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: $color-primary-main;
+                    
+                    padding: 5px 10px;
+                    background: transparent;
+                    font-size: $font-size-text-lg;
+                    color: $color-light;
+                }
+
+                input {
+                    border-left: none;
+                    border-top: none;
+                    border-right: none;
+    
+                    height: $font-size-text-lg + 30px;
+                    margin-bottom: 20px;
+                }
+    
+                textarea {
+                    resize: none;
+                    margin-bottom: 30px;
+                    height: 150px;
+                }
+            }
+
+        }
+
+        .socmedia {
+            text-align: center;
+            h2 {
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            
+            div {
+                margin: 30px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                // border: 1px solid green;
+                
+                a {
+                    position: relative;
+                    padding: 10px 20px;
+                    border-bottom-right-radius: 500px;
+                    border-top-right-radius: 500px;
+                    display: inline-block;
+                    background-color: $color-light;
+
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 10px;
+                        height: 100%;
+                        background-color: $color-primary-dark
+                    }
+
+                    p {
+                        color: $color-primary-dark;
+                        font-size: $font-size-subtitle-sm;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 920px) {
+    .ContactContainer {
+        > div {
+            gap: 40px;
+            .email, .socmedia {
+                grid-column: 1 / 3;
+            }
+            .socmedia {
+                grid-row: 1;
+            }
+            .email {
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

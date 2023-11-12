@@ -41,7 +41,7 @@ const variants = {
 function Experience() {
     return (
         <div className="ExperienceContainer">
-            <Heading value="Experience" />
+            <Heading value="Experiencia" />
             <div>
             {
                 items.map(item => (

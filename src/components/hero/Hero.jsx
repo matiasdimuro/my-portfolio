@@ -16,7 +16,9 @@ function Hero() {
             >
                 <Subheading value="Desarrollador Web Frontend" />
                 <Heading value="Matias Di muro" />
-                <Button text="Contactarme"/>
+                <a href="#Contacto">
+                    <Button text="Contactarme"/>
+                </a>
             </motion.div>
 
             <motion.div 
