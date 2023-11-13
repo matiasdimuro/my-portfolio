@@ -14,14 +14,19 @@ function ScrollButton() {
         end: { y: "80%" }
     }
 
+    const handleNavigation = () => {
+        const aboutSection = document.getElementById('AcercaDeMi')
+        aboutSection.scrollIntoView()
+    }
+
     return (
         <motion.div 
             className="ScrollButton" 
             initial={variants.initial} whileTap={variants.whileTap} whileInView={variants.visible}
         >
-            <a href="#AcercaDeMi">
+            <div onClick={handleNavigation}>
                 <motion.div initial={variantsItem.initial} animate={variantsItem.end} transition={{delay: .5}} />
-            </a>
+            </div>
             
         </motion.div>
     )
