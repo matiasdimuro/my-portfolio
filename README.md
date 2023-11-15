@@ -1,8 +1,16 @@
-# React + Vite
+# PORTFOLIO WEB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### About
 
-Currently, two official plugins are available:
+This portfolio as **one landing page** show my aptitudes, projects and profesional experience as Software Developer and UI Designer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies
+
+This is a **ViteJS** project developed with **Sass**, **ReactJS**, **FramerMotion**, **React-Toastify**, **Atropos** and deployed via **'gh-pages'** npm library.
+
+### Run & Deploy
+
+Clone the repository on your computer (pre-requisites: have installed **git** and **npm**).
+To run the project you have to execute the `npm run dev` script on bash.
+
+To deploy to **github pages** first you have to build via `npm run build`. Then you will be able to upload changes running `npm run deploy`
