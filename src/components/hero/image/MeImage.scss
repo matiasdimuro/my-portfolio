@@ -1,0 +1,32 @@
+@import '../../../index.scss';
+
+.MeImage {
+
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 300px;
+
+    position: relative;
+    left: -10px;
+
+    overflow: hidden;
+
+    border-radius: 10000px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 920px) {
+    .MeImage {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        max-height: 200px;
+
+        left: -5px;
+    }
+}

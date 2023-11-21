@@ -3,6 +3,7 @@ import ScrollButton from '../buttton/ScrollButton.jsx'
 import Circle from '../circle/Circle.jsx'
 import { Heading, Subheading } from '../text/Text.jsx'
 import { motion } from 'framer-motion'
+import MeImage from './image/MeImage.jsx'
 import './Hero.scss'
 
 function Hero() {
@@ -26,9 +27,9 @@ function Hero() {
                 initial={{x: 300, opacity: 0}} 
                 whileInView={{ x: 0, opacity: 1, transition: { duration: 1.2, type: "spring", delay: .15} }} 
             >
-                <Circle/>
+                <Circle MeImage={MeImage}/>
+                {/* <MeImage/> */}
             </motion.div>
-
             <ScrollButton />
 
         </div>

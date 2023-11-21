@@ -1,8 +1,10 @@
 import './Circle.scss'
 
-function Circle() {
+function Circle({ MeImage }) {
     return (
-        <div className='Circle bgGradientSecondary-LtRb'></div>
+        <div className='Circle bgGradientSecondary-LtRb'>
+            <MeImage />
+        </div>
     )
 }
 

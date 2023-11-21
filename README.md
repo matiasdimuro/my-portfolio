@@ -6,7 +6,7 @@ This portfolio as **one landing page** show my aptitudes, projects and profesion
 
 ### Technologies
 
-This is a **ViteJS** project developed with **Sass**, **ReactJS**, **FramerMotion**, **React-Toastify**, **Atropos** and deployed via **'gh-pages'** npm library.
+This is a **ViteJS** project developed with **Sass**, **ReactJS**, **FramerMotion**, **React-Toastify**, **Atropos**, **EmailJS** and deployed via **'gh-pages'** npm library.
 
 ### Run & Deploy
 

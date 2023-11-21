@@ -1,9 +1,15 @@
 @import url("../../index.scss");
 
 .Circle {
+    position: relative;
+
     width: 350px;
     height: 350px;
     border-radius: 541px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 920px) and (max-width: 1130px) {
