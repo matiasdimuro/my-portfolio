@@ -26,8 +26,7 @@ const items = [
     {
         title: "Especialidad",
         text: `
-        Soy una persona autodidacta, proactiva, organizada y creativa.
-        Me gusta dejar mi huella y enfocarme en los detalles`
+        Desarrollo UI & UX de sitios web, landing pages y portfolios web.`
     }
 ]
 

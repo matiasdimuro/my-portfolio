@@ -42,13 +42,10 @@ function Navbar() {
         }
     }
 
-    const variantsNavbar = {
-        initial: {
-            backgroundColor: "transparent"
-        },
-        scroll: {
-            backgroundColor: "red"
-        }
+    const handleNavigation = (target) => {
+        const section = document.querySelector(target)
+        section.scrollIntoView()
+        setMenuCollapsed(prev => !prev)
     }
 
     return (
@@ -65,7 +62,7 @@ function Navbar() {
                                 key={index} 
                                 text={link.value} 
                                 target={link.target} 
-                                handleClick={setMenuCollapsed}/>
+                                handleNavigation={handleNavigation}/>
                         ))
                     }
                 </ul>
@@ -80,7 +77,7 @@ function Navbar() {
                                 key={index} 
                                 text={link.value} 
                                 target={link.target}
-                                handleClick={setMenuCollapsed}/>
+                                handleNavigation={handleNavigation}/>
                         ))
                     }
                 </ul>
@@ -89,10 +86,10 @@ function Navbar() {
     )
 }
 
-function Link({ text, target, handleClick }) {
+function Link({ text, target, handleNavigation }) {
     return (
-        <li onClick={() => handleClick(prev => !prev)}>
-            <a href={target}>{text}</a>
+        <li onClick={() => handleNavigation(target)}>
+            <p>{text}</p>
         </li>
     )
 }
