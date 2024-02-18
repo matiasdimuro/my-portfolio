@@ -1,7 +1,8 @@
 @import "../index.scss";
 
 main, section {
-    min-height: 100dvh;
+    height: 100dvh;
+    max-height: 1000px;
     padding: 10px $padding-xl;
     display: flex;
     justify-content: center;

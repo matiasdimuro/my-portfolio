@@ -79,7 +79,7 @@ function Contact() {
                             name='emailForm' placeholder='Ingresa tu email' />
                         <textarea 
                             value={emailMessage}
-                            required='true'
+                            required={true}
                             onChange={(e) => setEmailMessage(e.target.value)}
                             id='emailMessage' name='emailForm' 
                             placeholder='¿Qué deseas contarme?' maxLength={300}>

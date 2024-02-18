@@ -10,6 +10,9 @@ import ReactJS from "./language_items/React"
 import GH from "./language_items/Github"
 import Figma from "./language_items/Figma"
 import SAP from "./language_items/SAP"
+import Astro from "./language_items/Astro"
+import NodeJS from "./language_items/NodeJS"
+import Express from "./language_items/Express"
 import "./Experience.scss"
  
 const items = [
@@ -29,7 +32,7 @@ const variants = {
         x: 10
     },
     animate: {
-        x: "-25%",
+        x: "-520px",
         transition: {
             repeat: Infinity,
             repeatType: "mirror",
@@ -55,15 +58,18 @@ function Experience() {
             <div className="LanguagesBar">
                 <div>
                     <motion.div variants={variants} initial="initial" animate="animate" >
-                        <HTML></HTML>
-                        <CSS></CSS>
-                        <JS></JS>
-                        <SCSS></SCSS>
-                        <TWD></TWD>
+                        <Astro></Astro>
                         <ReactJS></ReactJS>
+                        <JS></JS>
+                        <TWD></TWD>
+                        <SCSS></SCSS>
+                        <CSS></CSS>
+                        <HTML></HTML>
+                        <NodeJS></NodeJS>
+                        <Express></Express>
+                        <SAP></SAP>
                         <GH></GH>
                         <Figma></Figma>
-                        <SAP></SAP>
                     </motion.div>
                 </div>
             </div>
