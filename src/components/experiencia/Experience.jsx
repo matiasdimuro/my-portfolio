@@ -13,6 +13,8 @@ import SAP from "./language_items/SAP"
 import Astro from "./language_items/Astro"
 import NodeJS from "./language_items/NodeJS"
 import Express from "./language_items/Express"
+import TS from "./language_items/Typescript"
+import MongoDB from "./language_items/MongoDB"
 import "./Experience.scss"
  
 const items = [
@@ -29,10 +31,10 @@ const items = [
 
 const variants = {
     initial: {
-        x: 10
+        x: 20
     },
     animate: {
-        x: "-520px",
+        x: "-700px",
         transition: {
             repeat: Infinity,
             repeatType: "mirror",
@@ -60,6 +62,7 @@ function Experience() {
                     <motion.div variants={variants} initial="initial" animate="animate" >
                         <Astro></Astro>
                         <ReactJS></ReactJS>
+                        <TS></TS>
                         <JS></JS>
                         <TWD></TWD>
                         <SCSS></SCSS>
@@ -67,6 +70,7 @@ function Experience() {
                         <HTML></HTML>
                         <NodeJS></NodeJS>
                         <Express></Express>
+                        <MongoDB></MongoDB>
                         <SAP></SAP>
                         <GH></GH>
                         <Figma></Figma>
